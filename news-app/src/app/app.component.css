@@ -1,13 +1,15 @@
 /* navbar */
-
+nav{
+    background-color: white;
+}
 nav a{
-    color:#fff !important;
+    color:black !important;
     font-weight:bold;
     font-size:14px;
     text-decoration:none !important;
     line-height:1;
     text-transform: uppercase;
-    background-color:transparent;
+
 }
 
 nav a:first-child{
@@ -20,7 +22,7 @@ nav a:last-child{
 /* navbar */
 
 #main{
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(49, 138, 49);
 }
 
 .card{
