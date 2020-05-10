@@ -1,0 +1,30 @@
+/* navbar */
+
+nav a{
+    color:#fff !important;
+    font-weight:bold;
+    font-size:14px;
+    text-decoration:none !important;
+    line-height:1;
+    text-transform: uppercase;
+    background-color:transparent;
+}
+
+nav a:first-child{
+    border-radius:2px 0 0 2px;
+}
+
+nav a:last-child{
+    border-radius:0 2px 2px 0;
+}
+/* navbar */
+
+#main{
+    background-color: rgb(200, 200, 200);
+}
+
+.card{
+    border-radius: 0px;
+    border:  transparent;
+    box-shadow: 10px 10px 10px black;
+}

@@ -1,0 +1,63 @@
+
+<div id="main" ng-app>
+
+  <!--Navbar-->
+<nav class="navbar navbar-light purple lighten-4 mb-4 bg-success">
+
+  <!-- Navbar brand -->
+  <img src="https://cdn.pixabay.com/photo/2016/09/24/20/11/dab-1692452_960_720.png" alt="logo" width="80">
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+    aria-label="Toggle navigation"><span class="white-text"><i class="fa fa-bars" aria-hidden="true"></i></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+
+    <!-- Links -->
+    <div class="cotainer">
+    <div class="row">
+      <div class="col-lg-2" *ngFor="let source of Sources" (click)="searchArticles(source.id)" >
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item active">
+            <a class="nav-link" href="#">{{source.name}} <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+  <div class="container">
+    <div class="row" *ngFor="let article of Articles">  
+      <div class="col-lg-12" >
+        <div class="card-deck" >
+          <div class="card mb-4">
+            <div class="view overlay">
+              <img class="card-img-top" src={{article.urlToImage}} alt="news-image">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">{{article.title}}</h4>
+              <p class="card-text">{{article.description}}</p>
+              <h6 class="card-text small">{{article.publishedAt}}</h6>
+
+              <a href={{article.url}} target="_blank">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
