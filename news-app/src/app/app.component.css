@@ -20,7 +20,18 @@ nav a:last-child{
     border-radius:0 2px 2px 0;
 }
 /* navbar */
+.dark{
+    background-color: black;
+    height: 100px;
+    font-weight: 900;
+    font-size: 35px;
+}
 
+footer{
+    background-color: black;
+    height: 130px;
+    font-size: 20px;
+}
 #main{
     background-color: rgb(49, 138, 49);
 }
